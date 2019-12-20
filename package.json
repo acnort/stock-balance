@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "stock-balance",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acnort/react-boilerplate.git"
+    "url": "git+https://github.com/acnort/stock-balance.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
     "babel-eslint": "^10.0.3",
