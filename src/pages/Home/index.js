@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { NewStock } from '../../components';
+import NewStock from 'components/NewStock';
 
 class Home extends Component {
   render() {

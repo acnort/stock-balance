@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Input } from '..'
+import Input from 'components/Input'
 
 class NewStock extends Component {
   render() {
