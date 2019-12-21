@@ -19,5 +19,13 @@
     "react/prefer-stateless-function": "off",
     "react/state-in-constructor": "off",
     "semi": "off",
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"],
+        "paths": ["./src"]
+      }
+    }
   }
 }

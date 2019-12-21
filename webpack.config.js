@@ -1,9 +1,9 @@
-const path = require("path");
-const webpack = require("webpack");
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: "development",
+  entry: './src/index.js',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -11,28 +11,34 @@ module.exports = {
         exclude: /(node_modules)/,
         use: [
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
-              presets: ["@babel/env"]
+              presets: ['@babel/env']
             }
           },
           {
-            loader: "eslint-loader"
+            loader: 'eslint-loader'
           }
         ]
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      components: path.resolve(__dirname, 'src/components/'),
+      pages: path.resolve(__dirname, 'src/pages/')
+    }
+  },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/",
-    filename: "bundle.js"
+    path: path.resolve(__dirname, 'dist/'),
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, 'public/'),
     port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    publicPath: 'http://localhost:3000/dist/',
     historyApiFallback: true,
     hot: true
   },
